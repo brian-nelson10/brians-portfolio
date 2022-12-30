@@ -1,19 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import Footer from './components/Footer';
-// import NavMenu from './components/NavMenu';
-// import ScrollToTop from './components/ScrollToTop';
+import NavMenu from './components/NavMenu';
+import ScrollToTop from './components/ScrollToTop';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import Art from './pages/Art';
 
 function App() {
   return (
     <>
       <Router>
-        {/* <NavMenu />
-        <ScrollToTop /> */}
+        <NavMenu />
+        <ScrollToTop />
         <Switch>
           <Route path="/about">
             <About />
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/projects">
             <Projects />
+          </Route>
+          <Route path="/art">
+            <Art />
           </Route>
           <Route path="/">
             <Home />
