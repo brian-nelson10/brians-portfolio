@@ -1,18 +1,22 @@
 import React from 'react';
-// import AboutSection from '../components/AboutSection';
-// import ServicesSection from '../components/ServicesSection';
-// import ProjectsSection from '../components/ProjectsSection';
-// import ContactBanner from '../components/ContactBanner';
+import About from '../components/About';
+import Collab from '../components/Collab';
+import Projects from '../components/Projects';
+import ContactBanner from '../components/ContactBanner';
 import Hero from '../components/Hero';
+import Skills from '../components/Skills';
 
-export default function Home() {
+function Home() {
   return (
     <div>
       <Hero />
-      {/* <AboutSection />
-      <ServicesSection />
-      <ProjectsSection />
-      <ContactBanner /> */}
+      <About />
+      <Collab />
+      <Projects />
+      <Skills />
+      <ContactBanner />
     </div>
   );
 }
+
+export default Home;
