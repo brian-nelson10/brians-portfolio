@@ -23,7 +23,7 @@ const CollabStyles = styled.div`
   }
 `;
 
-export default function Collab() {
+function Collab() {
   return (
     <CollabStyles>
       <div className="container">
@@ -49,3 +49,5 @@ export default function Collab() {
     </CollabStyles>
   );
 }
+
+export default Collab;

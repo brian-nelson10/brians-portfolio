@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/about-sec-img.png';
+import AboutImg from '../assets/images/hero.png';
 import Resume from "../assets/resume/Brian.Nelson.pdf";
 
 const AboutStyles = styled.div`

@@ -5,7 +5,7 @@ import SwiperCore, { Navigation } from 'swiper';
 import ProjectItem from './ProjectItem';
 import SectionTitle from './SectionTitle';
 import 'swiper/swiper-bundle.min.css';
-import projects from '../assets/data/projects';
+import data from '../data/data';
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
@@ -82,14 +82,14 @@ function Projects() {
               },
             }}
           >
-            {projects.map((project, index) => {
-              if (index >= 5) return;
+            {data.map((data, index) => {
+            //   if (index >= 1) return;
               return (
-                <SwiperSlide key={project.id}>
+                <SwiperSlide key={data.id}>
                   <ProjectItem
-                    title={project.name}
-                    img={project.img}
-                    desc={project.desc}
+                    title={data.name}
+                    img={data.img}
+                    desc={data.desc}
                   />
                 </SwiperSlide>
               );

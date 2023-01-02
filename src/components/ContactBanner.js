@@ -22,7 +22,7 @@ const ContactBannerStyles = styled.div`
   }
 `;
 
-export default function ContactBanner() {
+function ContactBanner() {
   return (
     <ContactBannerStyles>
       <div className="container">
@@ -35,3 +35,5 @@ export default function ContactBanner() {
     </ContactBannerStyles>
   );
 }
+
+export default ContactBanner;
