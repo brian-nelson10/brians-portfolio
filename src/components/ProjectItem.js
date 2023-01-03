@@ -6,14 +6,12 @@ import ProjectImg from '../assets/images/hero.png';
 const ProjectItemStyles = styled.div`
   .projectItem__img {
     width: 100%;
-    height: 400px;
+    
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
     border: 3px solid var(--gray-2);
-    img {
-      height: 100%;
-    }
+    
   }
   .projectItem__info {
     margin-top: 1rem;
@@ -43,6 +41,7 @@ function ProjectItem({
 }) {
   return (
     <ProjectItemStyles>
+      
       <Link to="/projects" className="projectItem__img">
         <img src={img} alt="project img" />
       </Link>
@@ -52,6 +51,7 @@ function ProjectItem({
         </Link>
         <p className="projectItem__desc">{desc}</p>
       </div>
+      
     </ProjectItemStyles>
   );
 }

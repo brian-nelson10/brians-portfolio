@@ -3,6 +3,7 @@ import Marquee from "react-fast-marquee";
 import styled from 'styled-components';
 import { skillsData } from '../data/skillsData';
 import { skillsImage } from '../utils/skillsImage';
+import SectionTitle from './SectionTitle';
 import PText from './PText';
 
 const SkillStyles = styled.div`
@@ -13,20 +14,6 @@ const SkillStyles = styled.div`
     justify-content: flex-start;
     min-height: fit-content;
     padding: 2.5rem 2rem 2rem 2rem;
-  }
-  
-  .skillsHeader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .skillsHeader h2 {
-    font-family: var(--primaryFont);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2.5rem;
-    text-align: center;
   }
   
   .skillsContainer {
@@ -47,8 +34,8 @@ const SkillStyles = styled.div`
     background: #000000;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 200px;
     margin: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -59,11 +46,11 @@ const SkillStyles = styled.div`
   }
   
   .skill--box:hover {
-    transform: scale(1.15);
+    transform: scale(1.25);
   }
 
   .skill--img {
-    height: 130px;
+    height: 140px;
     pointer-events: none;
   }
 
@@ -141,11 +128,11 @@ const SkillStyles = styled.div`
       width: 135px;
       height: 135px;
       margin: 1.2rem;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem;git
     }
 }
 .skill--img {
-    height: 130px;
+    height: 140px;
     pointer-events: none;
   }
     .skillsHeader h2 {
@@ -163,8 +150,9 @@ function Skills() {
     return (
         <SkillStyles>
         <div className="skills">
-            <div className="skillsHeader">
-                <h2>Skills</h2>
+            <div className="container">
+            <SectionTitle subheading="a lifelong dedication to learning." heading="Skills" />
+                
             </div>
             <div className="skillsContainer">
                 <div className="skill--scroll">

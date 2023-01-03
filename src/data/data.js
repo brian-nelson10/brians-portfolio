@@ -17,21 +17,21 @@ const data = [
     id: uuidv4(),
     name: 'React Portfolio',
     desc:
-      '',
+      'Used React to create the app’s user interface. Used reusable components to compose each part of the landing page. Used React-Bootstrap, Vanilla.js and CSS to create beautiful visual elements. Implemented React Hooks to manage STATE in functional components.',
     img: Portfolio,
   },
   {
     id: uuidv4(),
     name: 'ca-TOOL-ogue',
     desc:
-      '',
+      'Developed a full stack application using the MERN stack. Made for handyman services. Built this app with React while managing STATE through Asynchronous Redux actions. Used the react context API to implement a Redux like store to manage STATE globally. Implemented the React Router DOM to allow nested RESTful routing. Sign and verify JSON Web Tokens as part of the authentication process along with login functionality and user-based navigation in React.',
     img: ToolImg,
   },
   {
     id: uuidv4(),
     name: "Now We're Cookin'",
     desc:
-      '',
+      'Developed this application using Javascript, Materialize, JQuery, HTML, and CSS. Used Google Maps API to fetch grocery store data closest to the user and on the store entered by the user. Used Edamam API to create a list of recipes based on any ingredient entered by the user. Styled application using Materialize CSS.',
     img: Cook,
   },
 //   {

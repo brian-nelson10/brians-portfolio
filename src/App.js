@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import NavMenu from './components/NavMenu';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
-// import About from './pages/About';
+import About from './pages/About';
 // import Contact from './pages/Contact';
 // import Projects from './pages/Projects';
 // import Art from './pages/Art';
@@ -16,10 +16,10 @@ function App() {
         <NavMenu />
         <ScrollToTop />
         <Switch>
-          {/* <Route path="/about">
+           <Route path="/about">
             <About />
           </Route>
-          <Route path="/contact">
+          {/*<Route path="/contact">
             <Contact />
           </Route>
           <Route path="/projects">

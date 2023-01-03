@@ -95,7 +95,7 @@ const HeroStyles = styled.div`
         }
       }
     }
-  }
+
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
@@ -180,7 +180,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <FaLinkedin/>
+                    <FaLinkedin className="a"/>
                   </a>
                 </li>
                 <li>

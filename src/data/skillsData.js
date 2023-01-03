@@ -7,7 +7,6 @@ export const skillsData = [
     'Node.JS',
     'Bootstrap',
     'Typescript',
-    'Figma',
     'MongoDB',
     'Tailwind',
     'MySQL',
