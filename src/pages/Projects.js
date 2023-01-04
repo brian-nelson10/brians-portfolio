@@ -70,6 +70,7 @@ function Projects() {
             heading="Projects"
             subheading="some coffee i managed to turn into software."
           />
+          
           <div className="projects__searchBar">
             <form>
               <input

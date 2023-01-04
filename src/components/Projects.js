@@ -62,8 +62,10 @@ function Projects() {
   return (
     <ProjectSectionStyle>
       <div className="container">
+      <div data-aos="fade-up">
         <SectionTitle subheading="some coffee i managed to turn into software." heading="Projects" />
-        <div className="projects__allItems">
+        </div>
+        <div data-aos="flip-right" className="projects__allItems">
           <Swiper
             spaceBetween={30}
             slidesPerView={1}

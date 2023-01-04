@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import ArtImg from '../assets/images/hero.png';
+import ModalImage from 'react-modal-image';
 
 const ArtItemStyles = styled.div`
   .artItem__img {
@@ -42,9 +43,15 @@ function ArtItem({
   return (
     <ArtItemStyles>
       
-      <Link to="/art" className="artItem__img">
+      {/* <Link to="/art" className="artItem__img">
         <img src={img} alt="art img" />
-      </Link>
+      </Link> */}
+      <ModalImage
+      className="artItem__img"
+      small={img}
+      medium={img}
+      alt="art img"
+      />
       <div className="artItem__info">
         <Link to="#">
           <h3 className="artItem__title">{title}</h3>

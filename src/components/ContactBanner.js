@@ -25,7 +25,7 @@ const ContactBannerStyles = styled.div`
 function ContactBanner() {
   return (
     <ContactBannerStyles>
-      <div className="container">
+      <div data-aos="zoom-in" className="container">
         <div className="contactBanner__wrapper">
           <PText>Have a project in mind?</PText>
           <h3 className="contactBanner__heading">Reach Out To Me</h3>

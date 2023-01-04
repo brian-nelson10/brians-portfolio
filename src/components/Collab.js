@@ -27,8 +27,10 @@ function Collab() {
   return (
     <CollabStyles>
       <div className="container">
+        <div data-aos="fade-up">
         <SectionTitle subheading="Lets Work Together" heading="Think. Code. Develop." />
-        <div className="collab__allItems">
+        </div>
+        <div data-aos="flip-down" data-aos-delay="700" className="collab__allItems">
           <CollabItem
             icon={<MdDesktopMac />}
             title="web design"

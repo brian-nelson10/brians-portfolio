@@ -157,8 +157,9 @@ function Skills() {
         <SkillStyles>
         <div className="skills">
             <div className="container">
+            <div data-aos="fade-up">
             <SectionTitle subheading="a lifelong dedication to learning." heading="Skills" />
-                
+                </div>
             </div>
             <div className="skillsContainer">
                 <div className="skill--scroll">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Footer from './components/Footer';
 import NavMenu from './components/NavMenu';
@@ -8,12 +9,41 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Art from './pages/Art';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-function App() {
+AOS.init();
+
+const content = (isFirstMount) => ({
+  animate: {
+    transition: { staggerChildren: 1, delayChildren: isFirstMount ? 1 : 2.5 },
+  },
+});
+const title = {
+  initial: { y: -25, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: [0.6, -0.05, 0.01, 3.5],
+    },
+  },
+};
+
+const App = ({isFirstMount}) => {
   return (
     <>
       <Router>
+      <motion.div
+          initial="initial"
+          animate="animate"
+          variants={content(isFirstMount)}
+        >
+          <motion.div variants={title}>
         <NavMenu />
+        </motion.div>
+        </motion.div>
         <ScrollToTop />
         <Switch>
            <Route path="/about">

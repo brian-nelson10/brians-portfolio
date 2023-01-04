@@ -79,21 +79,25 @@ function About() {
     <AboutStyles>
       <div className="container">
         <div className="aboutSection__left">
+          <div data-aos="fade-right">
           <SectionTitle
-            subheading="Let me introduce myself"
+            subheading="let me introduce myself"
             heading="About Me"
           />
+          </div>
+          <div data-aos="fade-right">
           <PText>
             I am a freelance Web Developer, Graphic Designer, and Executive Chef
             from Orlando, Florida. I love art in all forms and strive to provide 
             unique views through my design. Lets create beautiful Websites inside & out ❤️
           </PText>
-          <div className="aboutSection__buttons">
+          </div>
+          <div data-aos="fade-up" className="aboutSection__buttons">
             <Button btnText="Resume" href={Resume} download />
             <Button btnText="Learn More" btnLink="/about" outline />
           </div>
         </div>
-        <div className="aboutSection__right">
+        <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="800" className="aboutSection__right">
           <img className="aboutImg" src={AboutImg} alt="Img" />
         </div>
       </div>

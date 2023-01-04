@@ -68,7 +68,7 @@ function Art() {
         <div className="container">
           <SectionTitle
             heading="arts"
-            subheading="my artwork and design work. some made with pen and some with adobe illustrator."
+            subheading="my artwork and design work. it all started with a pen and some paper."
           />
           <div className="arts__searchBar">
             <form>

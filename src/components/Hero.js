@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
@@ -148,26 +149,82 @@ const HeroStyles = styled.div`
   }
 `;
 
-export default function HeroSection() {
+const content = (isFirstMount) => ({
+    animate: {
+      transition: { staggerChildren: 1, delayChildren: isFirstMount ? .8 : .5 },
+    },
+  });
+  const title = {
+    initial: { y: -25, opacity: 0 },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1.2,
+        ease: [0.6, -0.05, 0.01, 3.5],
+      },
+    },
+  };
+  const log = {
+    initial: { x: 30, opacity: 0 },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: .5,
+        ease: [0.6, -0.05, 0.01, 2.5],
+      },
+    },
+  };
+  const hero = {
+    initial: { y: 30, opacity: 0 },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: [0.6, -0.05, 0.01, 3.5],
+      },
+    },
+  };
+  const heroText = {
+    initial: { y: 60, opacity: 0 },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: .7,
+        ease: [0.6, -0.05, 0.01, 3.5],
+      },
+    },
+  };
+
+const Hero = ({isFirstMount}) => {
   return (
     <HeroStyles>
       <div className="hero">
         <div className="container">
-          <h1 className="hero__heading">
+        <motion.div
+          initial="initial"
+          animate="animate"
+          variants={content(isFirstMount)}
+        >
+          <motion.h1 variants={title} className="hero__heading">
             <span>Hi, I'm</span>
             <span className="hero__name">Brian Nelson</span>
-          </h1>
-          <div className="hero__img">
+          </motion.h1>
+          
+          <motion.div variants={hero} className="hero__img">
             <img src={HeroImg} alt="" />
-          </div>
-          <div className="hero__info">
+          </motion.div>
+          <motion.div variants={heroText} className="hero__info">
             <HeroText>
               I am currently working as a freelance web developer and in executive level managment.
               My perfect balance of technical and managerial skills stands me apart from the crowd.
             </HeroText>
             <Button btnText="Projects" btnLink="/projects" />
-          </div>
-          <div className="hero__social">
+          </motion.div>
+          <motion.div variants={log} className="hero__social">
             <div className="hero__social__indicator">
               <p>Social Media</p>
               <img src={SocialMediaArrow} alt="icon" />
@@ -212,13 +269,16 @@ export default function HeroSection() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="hero__scrollDown">
+          </motion.div>
+          <motion.div variants={log} className="hero__scrollDown">
             <p>Scroll</p>
             <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
-          </div>
+          </motion.div>
+          </motion.div>
         </div>
       </div>
     </HeroStyles>
   );
 }
+
+export default Hero;
