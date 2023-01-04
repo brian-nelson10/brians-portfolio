@@ -147,7 +147,7 @@ function NavMenu() {
         </li>
         <li>
           <NavLink
-            to="/projects"
+            to="/art"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}

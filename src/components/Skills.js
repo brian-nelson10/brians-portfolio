@@ -47,17 +47,23 @@ const SkillStyles = styled.div`
   
   .skill--box:hover {
     transform: scale(1.25);
+    filter: none; !important;
+  }
+  .skill--box {
+    filter: grayscale(100%);
   }
 
   .skill--img {
     height: 140px;
     pointer-events: none;
   }
-
+  .skill--img:hover {
+    filter: none;
+  }
   .marquee {
     padding: 3rem 0;
   }
-  
+
   @media (min-width: 992px) and (max-width: 1380px) {
     .skills {
       padding: 2rem 1rem 1rem 1rem;

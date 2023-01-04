@@ -6,8 +6,8 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-// import Projects from './pages/Projects';
-// import Art from './pages/Art';
+import Projects from './pages/Projects';
+import Art from './pages/Art';
 
 function App() {
   return (
@@ -22,12 +22,12 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-          {/*<Route path="/projects">
+          <Route path="/projects">
             <Projects />
           </Route>
           <Route path="/art">
             <Art />
-          </Route> */}
+          </Route> 
           <Route path="/">
             <Home />
           </Route>

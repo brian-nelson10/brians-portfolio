@@ -27,7 +27,7 @@ const SectionTitleStyle = styled.div`
 function SectionTitle({
     subheading = 'Need Subheading',
     heading = 'need heading',
-    heading2= 'need more subheading',
+    heading2= '',
   }) {
     return (
       <SectionTitleStyle className="section-title">

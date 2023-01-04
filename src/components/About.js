@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/hero.png';
+import AboutImg from '../assets/images/castle-min.jpg';
 import Resume from "../assets/resume/Brian.Nelson.pdf";
 
 const AboutStyles = styled.div`
@@ -31,6 +31,9 @@ const AboutStyles = styled.div`
     justify-content: flex-start;
     gap: 2rem;
     margin-top: 2rem;
+  }
+  .aboutImg {
+    border-radius: 15px
   }
   @media only screen and (max-width: 950px) {
     .aboutSection__left {
