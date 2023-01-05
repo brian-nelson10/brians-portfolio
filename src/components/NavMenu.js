@@ -22,6 +22,7 @@ const NavStyles = styled.nav`
       transition: 0.3s ease background-color;
       &:hover {
         background-color: var(--deep-dark);
+        transform: scale(1.1)
       }
     }
     a {

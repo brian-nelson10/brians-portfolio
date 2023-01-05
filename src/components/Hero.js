@@ -8,7 +8,7 @@ import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 import HeroText from './HeroText';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
-import { FaFacebook } from 'react-icons/fa';
+// import { FaFacebook } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 
 
@@ -97,6 +97,10 @@ const HeroStyles = styled.div`
       }
     }
 
+    a:hover {
+            transform: scale(2.5);
+          }
+        
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
@@ -233,14 +237,14 @@ const Hero = ({isFirstMount}) => {
               <ul>
                 <li>
                   <a
-                    href="http://linkedin.com/"
+                    href="http://linkedin.com/in/brian-nelson-6b915b11a"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <FaLinkedin className="a"/>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="http://facebook.com"
                     target="_blank"
@@ -248,10 +252,10 @@ const Hero = ({isFirstMount}) => {
                   >
                     <FaFacebook/>
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
-                    href="http://instagram.com/"
+                    href="http://instagram.com/b_nel10/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -260,7 +264,7 @@ const Hero = ({isFirstMount}) => {
                 </li>
                 <li>
                   <a
-                    href="http://github.com"
+                    href="https://github.com/brian-nelson10"
                     target="_blank"
                     rel="noreferrer"
                   >

@@ -23,7 +23,7 @@ const ButtonStyle = styled.div`
 
 function Button({
   btnText = 'test',
-  btnLink = 'test',
+  btnLink = '/',
   outline = false,
 }) {
   return (

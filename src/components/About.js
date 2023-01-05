@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
 import AboutImg from '../assets/images/castle-min.jpg';
@@ -35,6 +34,44 @@ const AboutStyles = styled.div`
   .aboutImg {
     border-radius: 15px
   }
+  .resume {
+    cursor: pointer;
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    background-color: ${(props) =>
+      props.outline ? 'transperant' : 'var(--gray-1)'};
+    padding: 0.7em 2em;
+    border: 2px solid var(--gray-1);
+    border-radius: 8px;
+    display: inline-block;
+    color: ${(props) => (props.outline ? 'var(--gray-1)' : 'black')};
+  }
+  .resume:hover {
+    background-color: var(--deep-bg);
+    color: var(--gray-1);
+  }
+  .learn {
+    cursor: pointer;
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    color: ${(props) =>
+      props.outline ? 'transperant' : 'var(--gray-1)'};
+    padding: 0.7em 2em;
+    border: 2px solid var(--gray-1);
+    border-radius: 8px;
+    display: inline-block;
+    background-color: var(--gray-bg);
+  }
+  .learn:hover {
+    background-color: var(--gray-1) !important;
+    color: var(--gray-2) !important;
+  }
+  @media only screen and (max-width: 768px) {
+    .resume {
+      font-size: 1.8rem;
+    }
+  }
+
   @media only screen and (max-width: 950px) {
     .aboutSection__left {
       flex: 4;
@@ -93,8 +130,9 @@ function About() {
           </PText>
           </div>
           <div data-aos="fade-up" className="aboutSection__buttons">
-            <Button btnText="Resume" href={Resume} download />
-            <Button btnText="Learn More" btnLink="/about" outline />
+            
+              <a href={Resume} download><button className="resume">Resume</button></a>
+            <button className="learn" >Learn More</button>
           </div>
         </div>
         <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="800" className="aboutSection__right">

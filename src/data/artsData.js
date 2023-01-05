@@ -63,7 +63,7 @@ const artsData = [
     id: uuidv4(),
     name: 'Charles Stout',
     desc:
-      'Illustration i did for a local brewery, Debine, in Dunedin, FLorida. Fun illustration of brewers dog, done for can label on a limited seasonal stout. Edited in illustrator.',
+      'Illustration i did for a local brewery, Debine, in Dunedin, Florida. Fun illustration of brewers dog, done for can label on a limited seasonal stout. Edited in illustrator.',
     img: Charles,
   },
   {

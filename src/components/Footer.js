@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import FooterCol from './FooterCol';
 import PText from './PText';
-// import Resume from '../assets/resume/Brian.Nelson.pdf';
+import Resume from '../assets/resume/Brian.Nelson.pdf';
 const FooterStyle = styled.div`
   background-color: var(--deep-dark);
   padding-top: 10rem;
@@ -96,7 +96,7 @@ export default function Footer() {
                         links={[
                             {
                                 title: '(407)-864-0404',
-                                path: 'tel:(407)8640404',
+                                path: 'tel:+14078640404',
                             },
                             {
                                 title: 'brian.nelson2975@gmail.com',
@@ -104,7 +104,8 @@ export default function Footer() {
                             },
                             {
                                 title: 'Resume',
-                                path: '',
+                                type: 'Download',
+                                path: {Resume},
                             },
                         ]}
                     />
@@ -115,19 +116,19 @@ export default function Footer() {
                         links={[
                             {
                                 title: 'LinkedIn',
-                                path: 'http://linkedin.com',
+                                path: 'http://linkedin.com/in/brian-nelson-6b915b11a',
                             },
-                            {
-                                title: 'Facebook',
-                                path: 'http://facebook.com',
-                            },
+                            // {
+                            //     title: 'Facebook',
+                            //     path: 'http://facebook.com',
+                            // },
                             {
                                 title: 'Instagram',
-                                path: 'http://instagram.com',
+                                path: 'http://instagram.com/b_nel10',
                             },
                             {
                                 title: 'GitHub',
-                                path: 'http://github.com',
+                                path: 'https://github.com/brian-nelson10',
                             },
                         ]}
                     />
@@ -137,7 +138,7 @@ export default function Footer() {
                 <div className="container">
                     <PText>
                         © 2022 - Brian Nelson {' '}
-                        <a target="_blank" rel="noreferrer" href="http://github.com">
+                        <a target="_blank" rel="noreferrer" href="https://github.com/brian-nelson10">
                             Github
                         </a>{' '}
                     </PText>

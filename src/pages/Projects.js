@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { MdSearch } from 'react-icons/md';
 import SectionTitle from '../components/SectionTitle';
 import data from '../data/data';
@@ -44,6 +45,32 @@ const ProjectStyle = styled.div`
   }
 `;
 
+
+const pageVariants = {
+    initial: {
+      opacity: 0,
+      y: "-100vw",
+      scale: 0.2
+    },
+    in: {
+      opacity: 1,
+      y: 0,
+      scale: 1
+    },
+    out: {
+      opacity: 0,
+      x: "100vw",
+      scale: 1.2
+    }
+  };
+  
+  const pageTransition = {
+    type: "tween",
+    ease: "anticipate",
+    duration: 0.8
+  };
+
+
 function Projects() {
   const [searchText, setSearchText] = useState('');
   const [projectsData, setProjectsData] = useState(data);
@@ -64,6 +91,13 @@ function Projects() {
   };
   return (
     <>
+        <motion.div
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <ProjectStyle>
         <div className="container">
           <SectionTitle
@@ -94,6 +128,7 @@ function Projects() {
           </div>
         </div>
       </ProjectStyle>
+      </motion.div>
     </>
   );
 }

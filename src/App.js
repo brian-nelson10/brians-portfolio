@@ -1,6 +1,6 @@
 import React from 'react';
-import { motion } from "framer-motion";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { AnimatePresence, motion } from "framer-motion";
+import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom';
 import Footer from './components/Footer';
 import NavMenu from './components/NavMenu';
 import ScrollToTop from './components/ScrollToTop';
@@ -11,6 +11,7 @@ import Projects from './pages/Projects';
 import Art from './pages/Art';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 
 AOS.init();
 
@@ -32,6 +33,7 @@ const title = {
 };
 
 const App = ({isFirstMount}) => {
+  const history = useHistory();
   return (
     <>
       <Router>
@@ -45,7 +47,8 @@ const App = ({isFirstMount}) => {
         </motion.div>
         </motion.div>
         <ScrollToTop />
-        <Switch>
+        <AnimatePresence>
+        <Switch history={history} key={history.pathname}>
            <Route path="/about">
             <About />
           </Route>
@@ -62,6 +65,7 @@ const App = ({isFirstMount}) => {
             <Home />
           </Route>
         </Switch>
+        </AnimatePresence>
         <Footer />
       </Router>
     </>

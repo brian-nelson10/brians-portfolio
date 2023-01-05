@@ -41,6 +41,7 @@ function ArtItem({
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 }) {
   return (
+    <div data-aos="flip-up" data-aos-delay="900">
     <ArtItemStyles>
       
       {/* <Link to="/art" className="artItem__img">
@@ -60,6 +61,7 @@ function ArtItem({
       </div>
       
     </ArtItemStyles>
+    </div>
   );
 }
 

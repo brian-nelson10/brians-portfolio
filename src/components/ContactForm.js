@@ -47,11 +47,11 @@ function ContactForm() {
     return (
         <>
             <FormStyle>
-                <form
+               
+                    <div className="form-group"
                     action={contact.contactUrl ?
                         contact.contactUrl : "https://formspree.io"}
                     method={contact.contactUrl ? "POST" : "GET"}>
-                    <div className="form-group">
                         <label htmlFor="name">
                             Your Name
                             <input
@@ -88,7 +88,7 @@ function ContactForm() {
                         </label>
                     </div>
                     <button type="submit">Send</button>
-                </form>
+                
             </FormStyle>
         </>
     );
