@@ -1,7 +1,7 @@
 {
   "name": "brians-portfolio",
   "version": "0.1.0",
-  "homepage": "http://brian-nelson10.github.io/brians-portfolio",
+  "homepage": "http://brian-nelson10.github.io/brians-portfolio/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
