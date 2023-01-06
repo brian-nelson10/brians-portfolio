@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import {FaArrowUp} from 'react-icons/fa';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
-// export const Button = styled.div`
-// position: fixed;
-// width: 100%;
-// left: 50%;
-// bottom: 40px;
-// height: 20px;
-// font-size: 3rem;
-// z-index: 1;
-// cursor: pointer;
-// color: green;
-// `
+const Scroll = styled.div`
+@media only screen and (max-width: 768px) {
+
+  display: none;
+
+}`
+
 const ScrollToTop = () =>{
 const [visible, setVisible] = useState(false)
   
@@ -33,7 +29,8 @@ useEffect(() => {
 window.addEventListener('scroll', toggleVisible);
 
 return (
-  <div>
+  <Scroll>
+  <div className='scroll'>
     <button
       onClick={() => {
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -56,6 +53,7 @@ return (
       <FaArrowUp/>
     </button>
   </div>
+  </Scroll>
 );
 }
 export default ScrollToTop;
