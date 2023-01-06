@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brians-portfolio/static/css/main.46da1046.css",
-    "main.js": "/brians-portfolio/static/js/main.f0c8d9e0.js",
+    "main.js": "/brians-portfolio/static/js/main.1dfd3bd3.js",
     "static/media/shrimpy.JPG": "/brians-portfolio/static/media/shrimpy.6a2083fb13214b864a0d.JPG",
     "static/media/naut-min.jpg": "/brians-portfolio/static/media/naut-min.c17777a657ce19a247d4.jpg",
     "static/media/portrait.JPG": "/brians-portfolio/static/media/portrait.09ff5c8a28236517e98a.JPG",
@@ -17,8 +17,8 @@
     "static/media/toolScreenShot-min.png": "/brians-portfolio/static/media/toolScreenShot-min.75bf9f98df23148d4512.png",
     "static/media/RobotoMono-Regular.ttf": "/brians-portfolio/static/media/RobotoMono-Regular.418a8f9f65ccad0918af.ttf",
     "static/media/onion.jpg": "/brians-portfolio/static/media/onion.fd5778e14e4778e8f3f3.jpg",
+    "static/media/Brian.Nelson.pdf": "/brians-portfolio/static/media/Brian.Nelson.bc2da5feb2d84d4c185d.pdf",
     "static/media/darkknight.jpg": "/brians-portfolio/static/media/darkknight.8fca1093873aa6de670a.jpg",
-    "static/media/Brian.Nelson.pdf": "/brians-portfolio/static/media/Brian.Nelson.6cc07b48daee8e90184b.pdf",
     "static/media/hero.png": "/brians-portfolio/static/media/hero.c5e99b5407304102bc9c.png",
     "static/media/postgresql-min.png": "/brians-portfolio/static/media/postgresql-min.3d0df29e2ca5ac5038c3.png",
     "static/media/blacksheep.png": "/brians-portfolio/static/media/blacksheep.f0fbef7bca42477cc9cd.png",
@@ -32,10 +32,10 @@
     "static/media/scroll-down-arrow.svg": "/brians-portfolio/static/media/scroll-down-arrow.8ad25c53cf6a683760324d08f36d9b00.svg",
     "static/media/social-media-arrow.svg": "/brians-portfolio/static/media/social-media-arrow.ecc0133cf2e7911d4b7286c107f982ec.svg",
     "main.46da1046.css.map": "/brians-portfolio/static/css/main.46da1046.css.map",
-    "main.f0c8d9e0.js.map": "/brians-portfolio/static/js/main.f0c8d9e0.js.map"
+    "main.1dfd3bd3.js.map": "/brians-portfolio/static/js/main.1dfd3bd3.js.map"
   },
   "entrypoints": [
     "static/css/main.46da1046.css",
-    "static/js/main.f0c8d9e0.js"
+    "static/js/main.1dfd3bd3.js"
   ]
 }
