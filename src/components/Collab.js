@@ -34,17 +34,17 @@ function Collab() {
           <CollabItem
             icon={<MdDesktopMac />}
             title="web design"
-            desc="I do ui/ux design for websites that always incoporates a unique style."
+            desc="UI/UX design incorporating a unique, clean and professional style."
           />
           <CollabItem
             icon={<MdCode />}
             title="web dev"
-            desc="I also develop the websites. I create high performance websites with blazing fast speed & performance."
+            desc="From the backend to the frontend lets builed beautiful websites inside and out. I can develop websites with blazing fast speed & performance."
           />
           <CollabItem
             icon={<MdPhonelinkSetup />}
             title="app Dev"
-            desc="I develop mobile applications. I create unique mobile apps with an eye catching ui. "
+            desc="I love to create and develop mobile first, responsive applications with an eye catching user interface. "
           />
         </div>
       </div>

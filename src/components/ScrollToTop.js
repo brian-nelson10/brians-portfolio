@@ -27,7 +27,6 @@ const [visible, setVisible] = useState(false)
   };
   
 useEffect(() => {
-  // 👇️ scroll to top on page load
   window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
 }, []);
 
@@ -42,17 +41,16 @@ return (
       style={{
         position: 'fixed',
         padding: '1rem 2rem',
-        fontSize: '20px',
+        fontSize: '30px',
         bottom: '40px',
         right: '45px',
         backgroundColor: 'transparent',
         border: 'none',
-        color: '#fff',
+        color: 'white',
         textAlign: 'center',
         display: visible ? 'inline' : 'none',
         cursor: 'pointer',
         transition: 'ease-in',
-        duration: '1s',
       }}
     >
       <FaArrowUp/>

@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from "framer-motion";
-import HeroImg from '../assets/images/hero.png';
+import HeroImg from '../assets/images/portrait.JPG';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
-import HeroText from './HeroText';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 // import { FaFacebook } from 'react-icons/fa';
@@ -24,8 +23,8 @@ const HeroStyles = styled.div`
     position: relative;
   }
   .hero__heading {
-    font-size: 2rem;
-    margin-bottom: -4rem;
+    font-size: 2.4rem;
+    margin-bottom: -3rem;
     position: relative;
     span {
       display: inline-block;
@@ -38,14 +37,31 @@ const HeroStyles = styled.div`
     }
   }
   .hero__img {
-    max-width: 900px;
+    max-width: 800px;
     width: 100%;
-    height: 600px;
+    height: 750px;
     margin: 0 auto;
-    border: 2px solid var(--gray-1);
+    border: 7px solid black;
+    img {
+      display: inline-block;
+      
+    }
   }
   .hero__info {
     margin-top: -18rem;
+  }
+  .HeroText {
+    color: white !important;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 2.1rem;
+    line-height: 1.3em;
+    font-weight: 1000;
+    span {
+      color: white !important;
+      background-color: black;
+      opacity: .6;
+    }
   }
   .hero__social,
   .hero__scrollDown {
@@ -150,6 +166,9 @@ const HeroStyles = styled.div`
         font-size: 1.3rem;
       }
     }
+    .HeroText {
+      font-size: 1.4rem;
+    }
   }
 `;
 
@@ -222,10 +241,10 @@ const Hero = ({isFirstMount}) => {
             <img src={HeroImg} alt="" />
           </motion.div>
           <motion.div variants={heroText} className="hero__info">
-            <HeroText>
-              I am currently working as a freelance web developer and in executive level managment.
+            <p className="HeroText"><span>
+              I am currently working as a freelance fullstack web developer and in executive level managment.
               My perfect balance of technical and managerial skills stands me apart from the crowd.
-            </HeroText>
+              </span></p>
             <Button btnText="Projects" btnLink="/projects" />
           </motion.div>
           <motion.div variants={log} className="hero__social">
