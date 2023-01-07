@@ -58,7 +58,7 @@ function ContactSection() {
         <SectionTitle heading="Contact" subheading="please reach out for anything. or coffee." heading2="Currently seeking those who can provide eyeball time, brain juice, lines of code, code improvements, raising an issue, asking a question, run the communication outside of the code repo, or just grab some coffee." />
         <div className="contactSection__wrapper">
           <div className="left">
-            <ContactInfoItem icon={<MdLocalPhone />} text="+4078640404" />
+            <ContactInfoItem icon={<MdLocalPhone />} text="+14078640404" />
             <ContactInfoItem icon={<MdEmail />} text="brian.nelson2975@gmail.com" />
             <ContactInfoItem text="Orlando, FL" />
           </div>

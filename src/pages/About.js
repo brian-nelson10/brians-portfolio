@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import PText from '../components/PText';
 import Button from '../components/Button';
-import AboutImg from '../assets/images/hero.png';
+import AboutImg from '../assets/images/space-dude.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 import Resume from '../assets/resume/Brian.Nelson.pdf';
@@ -43,7 +43,7 @@ const AboutPageStyles = styled.div`
   }
   .right {
     img {
-      border: 2px solid var(--gray-1);
+      border: 8px solid var(--gray-1);
     }
   }
   .about__info__items {
