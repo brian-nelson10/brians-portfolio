@@ -4,8 +4,24 @@ import Tmt from '../assets/images/tmtScreenShot1-min.png';
 import Portfolio from '../assets/images/reactportfolio-min.png';
 import ToolImg from '../assets/images/toolScreenShot-min.png';
 import Cook from '../assets/images/0-min.png';
+import EZ from "../assets/images/ezshot.png";
+import Lemon from "../assets/images/lemonshot.png"
 
 const data = [
+  {
+    id: uuidv4(),
+    name: 'EZ Eatz by Chef Yaya Business Website',
+    desc:
+      'Developed a visually stunning UI with React, Framer Motion, and Tailwind CSS. Integrated state management using React Hooks in functional components and used the React Context API, to avoid prop drilling. Created and edited images using Figma. Created custom forms and menus to handle large catering orders. ',
+    img: EZ,
+  },
+  {
+    id: uuidv4(),
+    name: 'Lemon Grove Events Business Website',
+    desc:
+      'Developed a visually stunning UI with React, Framer Motion, and Tailwind CSS.Used React to create the app’s user interface. Used reusable components to compose each part of the landing page. Developed custom forms used for booking and or contact. Implemented React Hooks to manage STATE in functional components. ',
+    img: Lemon,
+  },
   {
     id: uuidv4(),
     name: 'The Missing Teeth Ecommerce Store',

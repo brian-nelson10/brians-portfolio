@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import ArtImg from '../assets/images/hero.png';
+// import Modal from '../components/Modal';
 // import ModalImage from 'react-modal-image';
 
 const ArtItemStyles = styled.div`
@@ -40,6 +41,10 @@ function ArtItem({
   title = 'Art Name',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 }) {
+  // const [currentPhoto, setCurrentPhoto] = useState();
+  // const toggleModal = (image, i) => {
+  //   setCurrentPhoto({...image, index: i});
+  // }
   return (
     <div data-aos="flip-up" data-aos-delay="900">
     <ArtItemStyles>
@@ -53,6 +58,7 @@ function ArtItem({
       medium={img}
       alt="art img"
       /> */}
+      {/* <Modal /> */}
       <div className="artItem__info">
         <Link to="#">
           <h3 className="artItem__title">{title}</h3>
